@@ -30,8 +30,6 @@ app.get("/", function (req, res) {
         res.send(recordset);
       }
     );
-
-    console.log(request);
   });
 });
 
