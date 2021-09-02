@@ -1,5 +1,5 @@
 require("dotenv").config();
-require("msnodesqlv8");
+// require("msnodesqlv8");
 var express = require("express");
 var app = express();
 const sql = require("mssql");
@@ -10,7 +10,7 @@ const config = {
   password: process.env.DB_PWD,
   port: 1433,
   database: "master",
-  driver: "msnodesqlv8",
+  driver: "mssql",
   options: {
     encrypt: false,
   },
