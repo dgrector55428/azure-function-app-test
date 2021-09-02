@@ -16,7 +16,7 @@ const config = {
   },
 };
 
-app.get("/materials", function (req, res) {
+app.get("/", function (req, res) {
   sql.connect(config, function (err) {
     if (err) console.log("err", err);
 
